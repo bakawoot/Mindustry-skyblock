@@ -1,7 +1,7 @@
 name: "seadustry"
 displayName: "Seadustry"
-author: "Slava0135"
+author: "Slava0135, modified by misanthrope"
 main: "seadustry.Seadustry"
-description: "Survive on sand island and expand by placing land on water around "
+description: "Survive on sand island and expand by placing land on water around."
 version: "1.0"
 minGameVersion: 137
