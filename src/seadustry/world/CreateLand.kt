@@ -8,7 +8,7 @@ import mindustry.world.Block
 import mindustry.world.Tile
 import mindustry.world.blocks.environment.Floor
 
-open class Landfill(name: String) : Block(name) {
+open class CreateLand(name: String) : Block(name) {
 
     init {
         breakable = true
@@ -20,7 +20,7 @@ open class Landfill(name: String) : Block(name) {
         return tile != null && tile.floor().liquidDrop != null
     }
 
-    inner class LandfillBuild : Building() {
+    inner class CreateLandBuild : Building() {
         override fun updateTile() {
             tile.setFloor(Blocks.sand as Floor)
             tile.setAir()
