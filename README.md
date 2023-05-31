@@ -10,7 +10,7 @@ Run `gradlew jar`
 Mod jar will be in the build/libs/ directory.
 
 ## How to play
-On the ulitity tab you can find 3 new blocks:
+On the utility tab you can find 3 new blocks:
 * Create Land
 * Create Water
 * Create core zone
