@@ -1,11 +1,13 @@
 package seadustry
 
 import mindustry.mod.Mod
-import seadustry.content.SeaBlocks
+import seadustry.content.CreateLandBlock
+import seadustry.content.CreateWaterBlock
 
 class Seadustry : Mod() {
 
     override fun loadContent() {
-        SeaBlocks.load()
+        CreateWaterBlock.load()
+		CreateLandBlock.load()
     }
 }
