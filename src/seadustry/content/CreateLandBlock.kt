@@ -6,7 +6,7 @@ import mindustry.type.ItemStack
 import mindustry.world.Block
 import seadustry.world.CreateLand
 
-class SeaBlocks {
+class CreateLandBlock {
     companion object {
         lateinit var createLand: Block
 
