@@ -12,7 +12,7 @@ class SeaBlocks {
 
         fun load() {
             createLand = CreateLand("createLand").apply {
-                requirements(Category.effect, ItemStack.with(Items.sand, 24))
+                requirements(Category.effect, ItemStack.with(Items.sand, 0))
                 alwaysUnlocked = true
             }
         }
