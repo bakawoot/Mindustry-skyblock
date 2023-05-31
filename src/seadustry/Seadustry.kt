@@ -3,11 +3,13 @@ package seadustry
 import mindustry.mod.Mod
 import seadustry.content.CreateLandBlock
 import seadustry.content.CreateWaterBlock
+import seadustry.content.CreateCoreZoneBlock
 
 class Seadustry : Mod() {
 
     override fun loadContent() {
         CreateWaterBlock.load()
-		CreateLandBlock.load()
+	CreateLandBlock.load()
+	CreateCoreZoneBlock.load()
     }
 }
