@@ -15,4 +15,6 @@ On the utility tab you can find 3 new blocks:
 * Create Water
 * Create core zone
 
+Core Shard has been enabled.
+
 Use these to expand your island and defend yourself from the waves.
