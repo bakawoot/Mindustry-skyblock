@@ -17,4 +17,4 @@ On the utility tab you can find 3 new blocks:
 
 Core Shard has been enabled.
 
-Use these to expand your island and defend yourself from the waves.
+Expand your island and defend yourself from the waves.
