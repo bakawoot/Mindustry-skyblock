@@ -4,6 +4,7 @@ import mindustry.mod.Mod
 import seadustry.content.CreateLandBlock
 import seadustry.content.CreateWaterBlock
 import seadustry.content.CreateCoreZoneBlock
+import seadustry.content.EnableShardCore
 
 class Seadustry : Mod() {
 
@@ -11,5 +12,6 @@ class Seadustry : Mod() {
         CreateWaterBlock.load()
 	CreateLandBlock.load()
 	CreateCoreZoneBlock.load()
+	EnableShardCore.load()
     }
 }
