@@ -1,5 +1,9 @@
-# Seadustry
-### Skyblock but in sea for Mindustry
+# Skyblock (It's not playable at the moment)
+### Testing and feedback are always welcome
+#### To-dos:
+* Generate level
+* New blocks need proper resource requirement
+* Make core zone 3x3 instead of 1x1
 
 ## Building mod
 Install JDK 17. https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
@@ -18,3 +22,4 @@ On the utility tab you can find 3 new blocks:
 Core Shard has been enabled.
 
 Expand your island and defend yourself from the waves.
+
