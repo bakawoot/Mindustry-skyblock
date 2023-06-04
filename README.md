@@ -1,6 +1,6 @@
 # Skyblock (It's not playable at the moment)
 ### Testing and feedback are always welcome
-#### To-dos:
+#### To-do:
 * Generate level
 * New blocks need proper resource requirement
 * Make core zone 3x3 instead of 1x1
