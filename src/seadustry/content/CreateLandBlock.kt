@@ -12,7 +12,7 @@ class CreateLandBlock {
 
         fun load() {
             createLand = CreateLand("createLand").apply {
-                requirements(Category.effect, ItemStack.with(Items.sand, 0))
+                requirements(Category.effect, ItemStack.with(Items.copper, 5, Items.metaglass, 3))
                 alwaysUnlocked = true
             }
         }
