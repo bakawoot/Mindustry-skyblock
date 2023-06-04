@@ -2,8 +2,6 @@
 ### Testing and feedback are always welcome
 #### To-do:
 * Generate level
-* New blocks need proper resource requirement
-* Make core zone 3x3 instead of 1x1
 
 ## Building mod
 Install JDK 17. https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
