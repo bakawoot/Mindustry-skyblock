@@ -12,8 +12,9 @@ class CreateCoreZoneBlock {
 
         fun load() {
             createCoreZone = CreateCoreZone("createCoreZone").apply {
-                requirements(Category.effect, ItemStack.with(Items.sand, 0))
+                requirements(Category.effect, ItemStack.with(Items.copper, 24, Items.metaglass, 27, Items.titanium, 12, Items.thorium, 11, Items.silicon, 9))
                 alwaysUnlocked = true
+		size = 3
             }
         }
     }
