@@ -15,6 +15,7 @@ class CreateCoreZoneBlock {
                 requirements(Category.effect, ItemStack.with(Items.copper, 24, Items.metaglass, 27, Items.titanium, 12, Items.thorium, 11, Items.silicon, 9))
                 alwaysUnlocked = true
 		size = 3
+		buildCostMultiplier = 3.31f
             }
         }
     }
