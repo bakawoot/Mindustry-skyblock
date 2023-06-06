@@ -14,6 +14,7 @@ class CreateWaterBlock {
             createWater = CreateWater("createWater").apply {
                 requirements(Category.effect, ItemStack.with(Items.lead, 8, Items.silicon, 4))
                 alwaysUnlocked = true
+		buildCostMultiplier = 3.1f
             }
         }
     }
