@@ -14,6 +14,7 @@ class CreateLandBlock {
             createLand = CreateLand("createLand").apply {
                 requirements(Category.effect, ItemStack.with(Items.copper, 5, Items.metaglass, 3))
                 alwaysUnlocked = true
+                buildCostMultiplier = 3.2f
             }
         }
     }
