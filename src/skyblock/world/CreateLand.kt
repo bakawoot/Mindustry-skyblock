@@ -26,8 +26,19 @@ open class CreateLand(name: String) : Block(name) {
     inner class CreateLandBuild : Building() {
         override fun updateTile() {
 
+            val floorBaseNoiseSeed: Int = 50
+
+            val oreNoiseScale: Float = 13f
+            val copperOreNoiseSeed: Int = 301
+            val coalOreNoiseSeed: Int = 302
+            val leadOreNoiseSeed: Int = 303
+            val scrapOreNoiseSeed: Int = 304
+            val titaniumOreNoiseSeed: Int = 305
+            val thoriumOreNoiseSeed: Int = 306
+            
+
             // Base of floor
-            Noise.setSeed(50)
+            Noise.setSeed(floorBaseNoiseSeed)
             val tileNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 40f, 50f)
             
             if (tileNoise <= -11)
@@ -50,44 +61,44 @@ open class CreateLand(name: String) : Block(name) {
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setFloor(Blocks.basalt as Floor)
 
             // Copper ore
-            Noise.setSeed(301)
-            val copperOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
+            Noise.setSeed(copperOreNoiseSeed)
+            val copperOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 200f)
             if (copperOreNoise >= 42)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreCopper as Floor)
 
             // Coal ore
-            Noise.setSeed(302)
-            val coalOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
+            Noise.setSeed(coalOreNoiseSeed)
+            val coalOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 200f)
             if (coalOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreCoal as Floor)
 
             // Lead ore
-            Noise.setSeed(303)
-            val leadOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
+            Noise.setSeed(leadOreNoiseSeed)
+            val leadOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 200f)
             if (leadOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreLead as Floor)
 
             // Scrap ore
-            Noise.setSeed(304)
-            val scrapOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
+            Noise.setSeed(scrapOreNoiseSeed)
+            val scrapOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 200f)
             if (scrapOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreScrap as Floor)
 
             // Titanium ore
-            Noise.setSeed(305)
-            val titaniumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
+            Noise.setSeed(titaniumOreNoiseSeed)
+            val titaniumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 200f)
             if (titaniumOreNoise >= 40)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreTitanium as Floor)
 
             // Thorium ore
-            Noise.setSeed(306)
-            val thoriumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
+            Noise.setSeed(thoriumOreNoiseSeed)
+            val thoriumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 200f)
             if (thoriumOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreThorium as Floor)
 
             // Details & oil & cyro
             Noise.setSeed(100)
-            val detailNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 20f, 100f)
+            val detailNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), oreNoiseScale, 100f)
 
             if (Vars.world.tile(tile.x.toInt(),tile.y.toInt()).floor() == Blocks.ice && detailNoise >= 10)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setFloor(Blocks.cryofluid as Floor)
