@@ -1,4 +1,4 @@
-package seadustry.world
+package skyblock.world
 
 import mindustry.Vars.renderer
 import mindustry.content.Blocks
