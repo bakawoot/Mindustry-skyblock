@@ -1,10 +1,10 @@
-package seadustry.content
+package skyblock.content
 
 import mindustry.content.Items
 import mindustry.type.Category
 import mindustry.type.ItemStack
 import mindustry.world.Block
-import seadustry.world.CreateCoreZone
+import skyblock.world.CreateCoreZone
 
 class CreateCoreZoneBlock {
 	companion object {
