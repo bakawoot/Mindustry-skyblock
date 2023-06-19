@@ -51,37 +51,37 @@ open class CreateLand(name: String) : Block(name) {
 
             // Copper ore
             Noise.setSeed(301)
-            val copperOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13, 200f)
+            val copperOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
             if (copperOreNoise >= 42)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreCopper as Floor)
 
             // Coal ore
             Noise.setSeed(302)
-            val coalOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13, 200f)
+            val coalOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
             if (coalOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreCoal as Floor)
 
             // Lead ore
             Noise.setSeed(303)
-            val leadOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13, 200f)
+            val leadOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
             if (leadOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreLead as Floor)
 
             // Scrap ore
             Noise.setSeed(304)
-            val scrapOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13, 200f)
+            val scrapOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
             if (scrapOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreScrap as Floor)
 
             // Titanium ore
             Noise.setSeed(305)
-            val titaniumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13, 200f)
+            val titaniumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
             if (titaniumOreNoise >= 40)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreTitanium as Floor)
 
             // Thorium ore
             Noise.setSeed(306)
-            val thoriumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13, 200f)
+            val thoriumOreNoise: Float = Noise.noise(tile.x.toFloat(), tile.y.toFloat(), 13f, 200f)
             if (thoriumOreNoise >= 35)
                 Vars.world.tile(tile.x.toInt(),tile.y.toInt()).setOverlay(Blocks.oreThorium as Floor)
 
