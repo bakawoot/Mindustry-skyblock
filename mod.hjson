@@ -1,7 +1,7 @@
-name: "seadustry"
-displayName: "Seadustry"
+name: "skyblock"
+displayName: "Skyblock"
 author: "Slava0135, modified by misanthrope"
-main: "seadustry.Seadustry"
+main: "skyblock.Skyblock"
 description: "Survive on sand island and expand by placing land on water around."
 version: "1.0"
 minGameVersion: 137
