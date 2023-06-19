@@ -1,7 +1,8 @@
-# Skyblock (It's not playable at the moment)
+# Skyblock
 ### Testing and feedback are always welcome
 #### To-do:
-* Generate ores
+* Fix Cyro and Oil discover
+* Making gen random
 
 ## Building mod
 Install JDK 17. https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
