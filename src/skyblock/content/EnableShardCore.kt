@@ -1,4 +1,4 @@
-package seadustry.content
+package skyblock.content
 
 import mindustry.content.Blocks
 import mindustry.world.meta.BuildVisibility
