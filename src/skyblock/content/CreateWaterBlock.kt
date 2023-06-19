@@ -1,10 +1,10 @@
-package seadustry.content
+package skyblock.content
 
 import mindustry.content.Items
 import mindustry.type.Category
 import mindustry.type.ItemStack
 import mindustry.world.Block
-import seadustry.world.CreateWater
+import skyblock.world.CreateWater
 
 class CreateWaterBlock {
 	companion object {
