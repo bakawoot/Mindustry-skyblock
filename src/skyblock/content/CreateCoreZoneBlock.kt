@@ -11,7 +11,7 @@ class CreateCoreZoneBlock {
         lateinit var createCoreZone: Block
 
         fun load() {
-            createCoreZone = CreateCoreZone("createCoreZone").apply {
+            createCoreZone = CreateCoreZone("create-core-zone").apply {
                 requirements(Category.effect, ItemStack.with(Items.copper, 24, Items.metaglass, 27, Items.titanium, 12, Items.thorium, 11, Items.silicon, 9))
                 alwaysUnlocked = true
 		size = 3
