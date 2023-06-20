@@ -14,6 +14,7 @@ Mod jar will be in the build/libs/ directory.
 
 ## Deploy mod
 Modify `build.gradle`file:
+
 sdkRoot = path to your SDK folder
 
 
