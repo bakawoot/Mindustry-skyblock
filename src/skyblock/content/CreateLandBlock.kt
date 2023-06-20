@@ -11,7 +11,7 @@ class CreateLandBlock {
         lateinit var createLand: Block
 
         fun load() {
-            createLand = CreateLand("createLand").apply {
+            createLand = CreateLand("create-land").apply {
                 requirements(Category.effect, ItemStack.with(Items.copper, 5, Items.metaglass, 3))
                 alwaysUnlocked = true
                 buildCostMultiplier = 3.2f
